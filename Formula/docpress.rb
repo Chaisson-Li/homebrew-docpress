@@ -8,8 +8,10 @@ class Docpress < Formula
   license "MIT"
 
   # Pango's shared libraries. Do not depend on Homebrew's weasyprint formula.
+  # Homebrew's sass formula is Dart Sass.
   depends_on "pango"
   depends_on "python@3.12"
+  depends_on "sass"
 
   def install
     # Homebrew's pip_install passes --no-deps. This formula installs the
